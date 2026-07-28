@@ -1,0 +1,464 @@
+/* ==========================
+   Global Styling
+========================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+
+body {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    color: #333;
+
+}
+
+
+
+/* ==========================
+   Header
+========================== */
+
+
+header {
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: white;
+
+}
+
+
+header h1 {
+
+    font-size: 40px;
+
+    letter-spacing: 2px;
+
+}
+
+
+header p {
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+}
+
+
+
+#theme-btn {
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+
+/* ==========================
+   Main Layout
+========================== */
+
+
+main {
+
+    display: flex;
+
+    gap: 30px;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/* ==========================
+   Calculator Box
+========================== */
+
+
+.calculator {
+
+    width: 380px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* ==========================
+   Display
+========================== */
+
+
+.display {
+
+    background: white;
+
+    height: 100px;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    text-align: right;
+
+    overflow: hidden;
+
+}
+
+
+#previous-value {
+
+    font-size: 18px;
+
+    color: gray;
+
+    min-height: 25px;
+
+}
+
+
+
+#current-value {
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    overflow-x: auto;
+
+}
+
+
+
+
+
+/* ==========================
+   Buttons
+========================== */
+
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+
+.scientific-buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 12px;
+
+}
+
+
+
+
+.buttons button,
+.scientific-buttons button {
+
+
+    height: 55px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    background: white;
+
+}
+
+
+
+
+.buttons button:hover,
+.scientific-buttons button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+
+
+.operator {
+
+    background: #ff9f43 !important;
+
+    color:white;
+
+}
+
+
+
+.equal {
+
+    background:#10ac84 !important;
+
+    color:white;
+
+    grid-column: span 2;
+
+}
+
+
+
+
+
+/* ==========================
+   History
+========================== */
+
+
+.history {
+
+    width:300px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+
+.history h2 {
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+#history-list {
+
+    list-style:none;
+
+    max-height:300px;
+
+    overflow-y:auto;
+
+}
+
+
+
+#history-list li {
+
+    padding:10px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.history button {
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:10px;
+
+    background:#ff4757;
+
+    color:white;
+
+    border-radius:10px;
+
+}
+
+
+
+
+/* ==========================
+   Footer
+========================== */
+
+
+footer {
+
+    margin-top:30px;
+
+    padding:20px;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+   Dark Mode
+========================== */
+
+
+.dark {
+
+    background:#121212;
+
+    color:white;
+
+}
+
+
+.dark .calculator {
+
+    background:rgba(255,255,255,0.1);
+
+}
+
+
+.dark .display {
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+.dark #current-value {
+
+    color:white;
+
+}
+
+
+.dark .history {
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+.dark button {
+
+    background:#333;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+   Responsive Design
+========================== */
+
+
+@media(max-width:700px){
+
+
+    main {
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .calculator {
+
+        width:95%;
+
+    }
+
+
+    .history {
+
+        width:90%;
+
+    }
+
+
+}
