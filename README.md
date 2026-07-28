@@ -8,25 +8,25 @@ A modern , responsive and elegant scientific calculator built using **HTML, CSS,
 
 ### Dark Mode (Desktop)
 
-![Dark Mode (Desktop)](screenshots/desktop-dark.png)
+![Dark Mode (Desktop)](assets/screenshots/desktop-dark.png)
 
 ---
 
 ### Light Mode (Desktop)
 
-![Light Mode (Desktop)](screenshots/desktop-light.png)
+![Light Mode (Desktop)](assets/screenshots/desktop-light.png)
 
 ---
 
-### 
+### Mobile view
 
-![Mobile view](screenshots/mobile-view1.png)(screenshots/mobile-view2.png)
+![Mobile view](assets/screenshots/mobile-view1.png)(assets/screenshots/mobile-view2.png)
 
 ---
 
 ### Tablet view
 
-![Tablet view](screenshots/tablet-view1.png)(screenshots/tablet-view2.png)
+![Tablet view](assets/screenshots/tablet-view1.png)(assets/screenshots/tablet-view2.png)
 
 ---
 
