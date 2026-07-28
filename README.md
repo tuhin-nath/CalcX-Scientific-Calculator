@@ -139,7 +139,7 @@ CalcX is optimized for:
 **GitHub Pages:**
 
 ```
-https://github.com/tuhin-nath/CalcX-Scientific-Calculator 
+https://tuhin-nath.github.io/CalcX-Scientific-Calculator/
 ```
 
 
