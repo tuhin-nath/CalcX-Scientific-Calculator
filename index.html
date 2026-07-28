@@ -5,277 +5,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CalcX - Scientific Calculator</title>
+    <title>CalcX | Scientific Calculator</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
 
+    <div class="container">
 
-    <!-- Header Section -->
+        <!-- ================= HEADER ================= -->
 
-    <header>
+        <header class="header">
 
-        <h1>CalcX</h1>
+            <div class="logo">
 
-        <p>Modern Scientific Calculator</p>
+                <div class="logo-icon"><img src="assets/logo.png" alt="CalcX Logo"></div>
 
-        <button id="theme-btn">
-            🌙 Dark Mode
-        </button>
+                <div>
 
-    </header>
+                    <h1>CalcX</h1>
 
+                    <p>Scientific Calculator</p>
 
-
-    <!-- Main Calculator -->
-
-    <main>
-
-
-        <section class="calculator">
-
-
-            <!-- Display -->
-
-            <div class="display">
-
-                <div id="previous-value">
-                    
-                </div>
-
-
-                <div id="current-value">
-                    0
                 </div>
 
             </div>
 
+            <button id="theme-toggle" class="icon-btn">
 
+                <span class="material-symbols-rounded">
 
-            <!-- Scientific Buttons -->
+                    dark_mode
 
-            <div class="scientific-buttons">
+                </span>
 
-
-                <button onclick="scientificFunction('sin')">
-                    sin
-                </button>
-
-
-                <button onclick="scientificFunction('cos')">
-                    cos
-                </button>
-
-
-                <button onclick="scientificFunction('tan')">
-                    tan
-                </button>
-
-
-                <button onclick="scientificFunction('sqrt')">
-                    √
-                </button>
-
-
-                <button onclick="scientificFunction('log')">
-                    log
-                </button>
-
-
-                <button onclick="scientificFunction('ln')">
-                    ln
-                </button>
-
-
-                <button onclick="insertValue('Math.PI')">
-                    π
-                </button>
-
-
-                <button onclick="insertValue('Math.E')">
-                    e
-                </button>
-
-
-                <button onclick="insertValue('**')">
-                    xʸ
-                </button>
-
-
-            </div>
-
-
-
-
-            <!-- Calculator Buttons -->
-
-
-            <div class="buttons">
-
-
-                <button class="operator" onclick="clearDisplay()">
-                    C
-                </button>
-
-
-                <button class="operator" onclick="deleteNumber()">
-                    DEL
-                </button>
-
-
-                <button class="operator" onclick="insertValue('%')">
-                    %
-                </button>
-
-
-                <button class="operator" onclick="insertValue('/')">
-                    ÷
-                </button>
-
-
-
-
-                <button onclick="insertValue('7')">
-                    7
-                </button>
-
-
-                <button onclick="insertValue('8')">
-                    8
-                </button>
-
-
-                <button onclick="insertValue('9')">
-                    9
-                </button>
-
-
-                <button class="operator" onclick="insertValue('*')">
-                    ×
-                </button>
-
-
-
-
-                <button onclick="insertValue('4')">
-                    4
-                </button>
-
-
-                <button onclick="insertValue('5')">
-                    5
-                </button>
-
-
-                <button onclick="insertValue('6')">
-                    6
-                </button>
-
-
-                <button class="operator" onclick="insertValue('-')">
-                    -
-                </button>
-
-
-
-
-
-                <button onclick="insertValue('1')">
-                    1
-                </button>
-
-
-                <button onclick="insertValue('2')">
-                    2
-                </button>
-
-
-                <button onclick="insertValue('3')">
-                    3
-                </button>
-
-
-                <button class="operator" onclick="insertValue('+')">
-                    +
-                </button>
-
-
-
-
-
-                <button onclick="insertValue('0')">
-                    0
-                </button>
-
-
-                <button onclick="insertValue('.')">
-                    .
-                </button>
-
-
-                <button class="equal" onclick="calculate()">
-                    =
-                </button>
-
-
-            </div>
-
-
-
-        </section>
-
-
-
-
-        <!-- History Section -->
-
-
-        <section class="history">
-
-
-            <h2>
-                Calculation History
-            </h2>
-
-
-            <ul id="history-list">
-
-            </ul>
-
-
-            <button onclick="clearHistory()">
-                Clear History
             </button>
 
-
-        </section>
-
-
-
-    </main>
+        </header>
 
 
 
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-layout">
+
+            <!-- ================= CALCULATOR ================= -->
+
+            <section class="calculator-card">
+
+                <!-- Display -->
+
+                <div class="display">
+
+                    <div id="previous-value" class="previous-value"></div>
+
+                    <div id="current-value" class="current-value">0</div>
+
+                </div>
 
 
-    <!-- Footer -->
 
-    <footer>
+                <!-- Scientific -->
 
-        <p>
-            Created by Tuhin Nath | IITM'29 | CalcX Project
-        </p>
+                <div class="scientific-grid">
 
-    </footer>
+                    <button onclick="scientificFunction('sin')">sin</button>
+
+                    <button onclick="scientificFunction('cos')">cos</button>
+
+                    <button onclick="scientificFunction('tan')">tan</button>
+
+                    <button onclick="scientificFunction('sqrt')">√</button>
+
+                    <button onclick="scientificFunction('log')">log</button>
+
+                    <button onclick="scientificFunction('ln')">ln</button>
+
+                    <button onclick="insertValue('Math.PI')">π</button>
+
+                    <button onclick="insertValue('**')">xʸ</button>
+
+                </div>
 
 
 
+                <!-- Number Pad -->
 
-<script src="script.js"></script>
+                <div class="button-grid">
 
+                    <button class="action" onclick="clearDisplay()">AC</button>
+
+                    <button class="action" onclick="deleteNumber()">⌫</button>
+
+                    <button class="action" onclick="insertValue('%')">%</button>
+
+                    <button class="operator" onclick="insertValue('/')">÷</button>
+
+
+
+                    <button onclick="insertValue('7')">7</button>
+
+                    <button onclick="insertValue('8')">8</button>
+
+                    <button onclick="insertValue('9')">9</button>
+
+                    <button class="operator" onclick="insertValue('*')">×</button>
+
+
+
+                    <button onclick="insertValue('4')">4</button>
+
+                    <button onclick="insertValue('5')">5</button>
+
+                    <button onclick="insertValue('6')">6</button>
+
+                    <button class="operator" onclick="insertValue('-')">−</button>
+
+
+
+                    <button onclick="insertValue('1')">1</button>
+
+                    <button onclick="insertValue('2')">2</button>
+
+                    <button onclick="insertValue('3')">3</button>
+
+                    <button class="operator" onclick="insertValue('+')">+</button>
+
+
+
+                    <button class="zero" onclick="insertValue('0')">0</button>
+
+                    <button onclick="insertValue('.')">.</button>
+
+                    <button class="equal" onclick="calculate()">=</button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= HISTORY ================= -->
+
+            <aside class="history-card">
+
+                <div class="history-header">
+
+                    <h2>History</h2>
+
+                    <button onclick="clearHistory()" class="clear-history">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+                <ul id="history-list"></ul>
+
+            </aside>
+
+        </main>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <p>
+
+                Designed & Developed by <strong>Tuhin Nath</strong> | IITM'29
+
+            </p>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
 
 </body>
 

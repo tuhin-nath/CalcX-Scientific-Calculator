@@ -1,0 +1,77 @@
+/* ===========================
+   CalcX Design Variables
+=========================== */
+
+/* ---------- Dark Theme (Default) ---------- */
+
+:root {
+
+    --bg-color: #0f172a;
+    --surface-color: rgba(30, 41, 59, 0.8);
+    --surface-solid: #1e293b;
+
+    --display-bg: rgba(15, 23, 42, 0.95);
+
+    --button-bg: #334155;
+    --button-hover: #475569;
+
+    --operator-bg: #2563eb;
+    --operator-hover: #1d4ed8;
+
+    --equal-bg: #22c55e;
+    --equal-hover: #16a34a;
+
+    --danger-bg: #ef4444;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --border-color: rgba(255,255,255,.08);
+
+    --shadow:
+        0 20px 45px rgba(0,0,0,.35);
+
+    --radius: 24px;
+
+    --transition: .25s ease;
+
+}
+
+
+
+/* ---------- Light Theme ---------- */
+
+body.light {
+
+    --bg-color: #f3f4f6;
+
+    --surface-color: rgba(255,255,255,.9);
+
+    --surface-solid: #ffffff;
+
+    --display-bg: #eef2f7;
+
+    --button-bg: #e5e7eb;
+
+    --button-hover: #d1d5db;
+
+    --operator-bg: #2563eb;
+
+    --operator-hover: #1d4ed8;
+
+    --equal-bg: #16a34a;
+
+    --equal-hover: #15803d;
+
+    --danger-bg: #dc2626;
+
+    --text-primary: #111827;
+
+    --text-secondary: #6b7280;
+
+    --border-color: rgba(0,0,0,.08);
+
+    --shadow:
+        0 20px 45px rgba(0,0,0,.12);
+
+}
