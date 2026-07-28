@@ -1,4 +1,4 @@
-# CalcX – Modern Scientific Calculator
+# CalcX v1.0 – Modern Scientific Calculator
 
 A modern , responsive and elegant scientific calculator built using **HTML, CSS & JavaScript**. CalcX combines a clean Apple-inspired interface with essential scientific operations making it both functional and visually appealing.
 
