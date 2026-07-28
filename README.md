@@ -1,6 +1,6 @@
 # CalcX – Modern Scientific Calculator
 
-A modern , responsive and elegant scientific calculator built using **HTML, CSS, and JavaScript**. CalcX combines a clean Apple-inspired interface with essential scientific operations making it both functional and visually appealing.
+A modern , responsive and elegant scientific calculator built using **HTML, CSS & JavaScript**. CalcX combines a clean Apple-inspired interface with essential scientific operations making it both functional and visually appealing.
 
 ---
 
@@ -20,13 +20,13 @@ A modern , responsive and elegant scientific calculator built using **HTML, CSS,
 
 ### Mobile view
 
-![Mobile view](assets/screenshots/mobile-view1.png)(assets/screenshots/mobile-view2.png)
+![Mobile view](assets/screenshots/mobile-view1.png)
 
 ---
 
 ### Tablet view
 
-![Tablet view](assets/screenshots/tablet-view1.png)(assets/screenshots/tablet-view2.png)
+![Tablet view](assets/screenshots/tablet-view1.png)
 
 ---
 
@@ -103,7 +103,7 @@ CalcX/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/tuhin-nath/CalcX.git
+git clone https://github.com/tuhin-nath/CalcX-Scientific-Calculator 
 ```
 
 ### Open the project
@@ -139,7 +139,7 @@ CalcX is optimized for:
 **GitHub Pages:**
 
 ```
-https://tuhin-nath.github.io/CalcX/
+https://github.com/tuhin-nath/CalcX-Scientific-Calculator 
 ```
 
 
